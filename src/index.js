@@ -5,6 +5,8 @@ import App from './App';
 import { Provider } from 'react-redux'
 import { BrowserRouter as Router } from 'react-router-dom'
 import configureStore from './store'
+import axios from 'axios';
+import UserForm from './components/UserForm';
 
 const store  = configureStore()
 
@@ -13,6 +15,7 @@ ReactDOM.render(
     <Provider store={store}>
       <Router>
         <App />
+        <UserForm />
       </Router>
     </Provider>
   </React.StrictMode>,
